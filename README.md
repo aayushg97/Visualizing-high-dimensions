@@ -2,10 +2,12 @@
 
 This repo illustrates some simple visualization methods using the animals with attributes data set. This is a small data set that has information about 50 animals. The animals are listed in classes.txt. For each animal, the information consists of values for 85 features: does the animal have a tail, is it slow, does it have tusks, etc. The details of the features are in predicates.txt. The full data consists of a 50 × 85 matrix of real values, in predicate-matrix-continuous.txt.
 
+## PCA
 Following is a visualization of these animals in 2D using PCA projection.
 
 ![](pca.png)
 
+## t-SNE
 A popular visualization method is the t-SNE algorithm. This method takes a numerical parameter called the perplexity and then obtains an embedding by solving a non-convex optimization problem. The t-SNE algorithm can be invoked to get a 2-d embedding of a data set X. The perplexity has a significant effect on the output. Following figures show visualizations of animals for different perplexity values (5, 10, 25, 49).
 
 ![](tsne5.png)
